@@ -114,6 +114,7 @@ start_emr_movie_classification_script = EmrAddStepsOperator(
 
 last_step = len(EMR_STEPS) - 1
 
+
 wait_for_movie_classification_transformation = EmrStepSensor(
     dag=dag,
     task_id="wait_for_movie_classification_transformation",
